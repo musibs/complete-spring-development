@@ -1,6 +1,6 @@
 # Complete Spring Development
 
-## This Repository contains the source code for major Spring features:
+### This Repository contains the source code for major Spring features:
 
 - Spring Core Concepts
 - Spring MVC
