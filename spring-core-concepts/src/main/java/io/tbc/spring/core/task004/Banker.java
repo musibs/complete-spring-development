@@ -2,15 +2,14 @@ package io.tbc.spring.core.task004;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.context.annotation.ComponentScan;
 import org.springframework.stereotype.Component;
 
 /**
  * @author somnath.musib
  */
-
 @Component
-public class Person {
-
+public class Banker {
     private Account account;
 
     /**
@@ -19,13 +18,13 @@ public class Person {
      * @param account
      */
     @Autowired
-    public Person(@Qualifier("savings") Account account) {
+    public Banker(Account account) {
         this.account = account;
     }
 
     @Override
     public String toString() {
-        return "Person{" +
+        return "Banker{" +
                 "account=" + account +
                 '}';
     }

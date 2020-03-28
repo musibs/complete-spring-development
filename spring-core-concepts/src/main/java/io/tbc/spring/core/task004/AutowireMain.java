@@ -9,7 +9,8 @@ import org.springframework.context.annotation.AnnotationConfigApplicationContext
 public class AutowireMain {
 
     public static void main(String[] args) {
-        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AutowiredConfiguration.class);
+        ApplicationContext applicationContext = new AnnotationConfigApplicationContext(AutowiredConfiguration.class, AutowiredConfiguration.class);
         System.out.println(applicationContext.getBean(Person.class).toString());
+        System.out.println(applicationContext.getBean(Banker.class).toString());
     }
 }
