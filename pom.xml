@@ -13,7 +13,6 @@
         <spring.framework.version>5.2.3.RELEASE</spring.framework.version>
     </properties>
     <modules>
-
         <module>spring-core-concepts</module>
     </modules>
 
@@ -74,4 +73,19 @@
             <version>${spring.framework.version}</version>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.8.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+
+            </plugin>
+        </plugins>
+    </build>
 </project>

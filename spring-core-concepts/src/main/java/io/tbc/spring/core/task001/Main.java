@@ -12,6 +12,9 @@ public class Main {
 
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(RunIdConfiguration.class);
         RunIdCounter runIdCounter = applicationContext.getBean(RunIdCounter.class);
-
+        System.out.println("Next five counter values are as follows:");
+        for(int i=0; i<5; i++) {
+            System.out.println(runIdCounter.getCounter());
+        }
     }
 }
